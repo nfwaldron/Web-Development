@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Forms</title>
+	</head>
+	
+	<body>
+		<!--Forms are used to collect information from users. Form actions <action></action> specify where to send the data once its been sumbitted-->
+			 
+		<form action="http://www.google.com"> <!--This will send the form to Google when submitted-->
+		<!--Input Tags: <input></input> Used commonly inside of forms, inputs are used to that we can type a value-->
+		<!--Label Tags: <label></label> Used to label the various data fields on a form-->
+		<!--Break Tags: <br></br> Allow users to skip a line in our web document so that material does not cram together-->
+		<label>Name:<input type = "text"/></label>
+			<br></br>
+		<label>Password:<input type = "password"/></label>
+		<label>Own a Bike or Car? 
+			Bike<input type = "checkbox"/> 
+			Car <input type="checkbox"/>
+		</label>
+		<br></br>
+		<label>Apartment or House:
+			House<input type="radio" name="living"/>
+			Apartment<input type="radio" name="living"/>
+		</label>
+		<br></br>
+		<!--Text Area: <textarea></textarea> is used to provide area for users to enter text.-->
+		<textarea>Default text box...</textarea>
+		<br></br>
+		
+		<!--Selections and Options: <select></select> functions as a wrapper for the <options></options> tag, and allows users to make selections-->
+		<label>Favorite Number between 1 and 3.
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+        </select>
+    </label>
+    <br></br>
+	<!-- The submit type submits the form-->
+    <input type="submit">
+		</form>
+	</body>
+	
+</html>
