@@ -28,5 +28,15 @@ span{
 
 .para3{
 	background-color: white;
-	
+	text-align:center;	
+}
+
+img{
+	margin: 40px 0px 0px 0px;
+    border: 7px solid white;
+    border-radius: 20px;
+}
+
+div{
+	text-align: center;
 }
