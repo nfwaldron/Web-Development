@@ -1,0 +1,32 @@
+body{
+	background-color: #FF33CC;
+}
+
+.heading1{
+	text-align: center;
+	color: black;
+}
+
+.heading2{
+	font-family:fantasy;
+	color: #CCFFFF;
+}
+
+.para1{
+	color: #CCFFFF;
+}
+
+.heading3{
+	background-color: #6666FF;
+	color: #3D1429;
+}
+
+span{
+	font-size: 3em;
+	color: #CCFFFF;
+}
+
+.para3{
+	background-color: white;
+	
+}
