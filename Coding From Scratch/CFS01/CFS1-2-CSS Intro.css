@@ -1,3 +1,4 @@
+
 body{
 	background-color: #FF33CC;
 }
@@ -39,4 +40,18 @@ img{
 
 div{
 	text-align: center;
+}
+
+#box1{
+	height:100px;
+	width: 100px;
+	background-color: burlywood;
+	padding: 50px;
+}
+
+#box2{
+	height:100px;
+	width: 100px;
+	background-color: lawngreen;
+	margin: 25px;
 }

@@ -1,0 +1,68 @@
+/*Padding - Creates the distance between the border and content within the element.
+
+    Padding can be applied to an individual side, as opposed to all sides as well.
+*/
+#box1 {
+    height: 100px;
+    width: 100px;
+    background-color: burlywood;
+    padding: 50px;
+    padding-bottom: 200px;
+}
+
+/*Margins - Creating the space outside of an element, margins can be applied to specific sides.*/
+
+#box2 {
+    height: 100px;
+    width: 100px;
+    background-color: forestgreen;
+    margin: 25px;
+    margin-left: 100px;
+}
+
+/* Text Properties */
+
+#text {
+color: chocolate;
+letter-spacing: 3px;
+text-align:right;
+/*Text Decoration - Underlines, Overlines, Linethroughs, or None*/
+text-decoration:underline overline;
+/*Text Transforms - UPPERCASE, lowercase, capitalize, or None*/
+text-transform: uppercase;
+}
+
+
+/* Font Properties */
+#text2 {
+    /*font-family: Verdana, Arial ;
+    font-size: 5em;
+    font-style: italic;*/
+    /*Font Shorthand Property - Uses the values of all of the font properties so that it's less writing.*/
+    font: italic 5em 'Verdana'
+}
+
+/*Editing Links*/
+
+/*Default Link State*/
+a:link {
+    color:red;
+
+}
+
+/*When the user clicks the link at least once, it will turn into a visited state and show as this style*/
+a:visited {
+color:green;
+}
+
+/*If a user hovers over a link, apply this style to it.*/
+
+a:hover{
+    font-size: 2em;
+    color:aqua;
+}
+
+/*While the user is currently clicking link*/
+a:active{
+    color: pink;
+}
