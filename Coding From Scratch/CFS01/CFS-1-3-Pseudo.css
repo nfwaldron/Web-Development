@@ -1,0 +1,45 @@
+body{
+    background-color: cornflowerblue;
+    background-image: url("https://hja7pg.bn1.livefilestore.com/y2pI3X-Uvm3wrneyupawH8rD75_hpUv7TN15VsND5i_bUlX3QJzI4ZY3zSrQGGSR4E4gpLNiW8aYyDw3l9EO39YwmAGRS8SonNQZ4lDJZv0wwo/door.jpg?psid=1");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#head1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 100px;
+    color: floralwhite;
+}
+
+h, p {
+    color:floralwhite;
+    
+}
+
+#para1::first-line{
+    font-family: sans-serif;
+    color:#FF0000;
+    
+}
+
+/* unvisited link */
+a:link {
+    color: #FF0000;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+}

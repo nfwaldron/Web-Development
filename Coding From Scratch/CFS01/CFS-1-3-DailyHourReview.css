@@ -1,0 +1,50 @@
+body{
+	background-color: #0052CC;
+}
+
+h1{
+	font-family: fantasy;
+	font-size: 60px;
+	color:#FFFF99;
+	text-align: center;
+}
+
+img{
+	border: black 5px groove;
+	height: 600px;
+	width: 500px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td{
+	border-color: black;
+	border-width: 5px;
+	border-style: groove;
+	border-collapse: collapse;
+}
+
+#firstname:focus{
+	background-color: yellow;
+}
+
+#lastname:focus{
+	background-color: yellow;
+}
+
+#street:focus{
+	background-color: yellow;	
+}
+#para1 {
+    font-family: fantasy;
+    
+}
+#para1::first-letter{
+    font-size: 30px;
+    color:orange;
+}
+
+.dis:hover{
+    font-style: oblique;
+}
