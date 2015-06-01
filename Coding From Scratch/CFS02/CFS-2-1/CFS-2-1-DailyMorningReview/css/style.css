@@ -1,0 +1,37 @@
+.banner-container {
+	width: 100%;
+	position: relative;
+	padding: 0px;
+	box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+	/*background: url("../images/banner-bg.jpg") no-repeat;*/
+	background-size: 100% 100%;
+	background-size: cover;
+	position: relative;
+}
+.banner-container > img {
+	width: 100%;
+	
+}
+.banner-content {
+	position: absolute;
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+.banner-content h2 {
+	color: #fff;
+	font-size: 3.5em;
+	margin: 2% 0 30px;
+	line-height: 1.2em;
+}
+.banner-content p {
+	font-size: 1.6em;
+	font-weight: normal;
+	font-style: normal;
+	color: #fff;
+}
+.banner-content header {
+color: #fff;
+padding-top: 20%;
+}
