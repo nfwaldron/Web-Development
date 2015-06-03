@@ -77,9 +77,9 @@ else if ( age > 18 && myGender === 'F')
     console.log("New array = " + numbers);
 }
 
-else ( age < 10 && myGender === 'F')
+else if ( age < 10 && myGender === 'F')
 {
-    console.log("The first number will be removed from the array:");
+    console.log("Numbers will be added to the array:");
     // Unshift adds elements to the beggining of the array...functions like push()
     numbers.unshift(10,13,14);
     console.log("New array = " + numbers);
