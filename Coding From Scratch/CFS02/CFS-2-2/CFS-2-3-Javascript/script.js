@@ -1,3 +1,5 @@
+// ARRAY MANIPULATION
+
 /*Arrays - Are used to store multiple values in a single variable.
 Arrays are 0 index based, meaning the first item starts as number 0.
 
