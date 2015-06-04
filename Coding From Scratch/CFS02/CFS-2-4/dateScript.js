@@ -1,3 +1,31 @@
+/*Convert your birthday to a date*/
+
+/*Turn your birthday into milliseconds*/
+
+// The Date.parse() method turns a date in the form of Month Day, Year into a millisecond value that the computer can understand
+var birthdayMilli = Date.parse("November 28, 1988");
+console.log(birthdayMilli);
+
+/*Change milliseconds back into a date.*/
+
+// If you pass a variable that contains the millisecond value of a date as an arguement to the new Date() function, it will return the value as a date in Month Day, Year
+var birthdayMilliToDate = new Date(birthdayMilli);
+console.log(birthdayMilliToDate);
+
+/*Turn that date into a string.*/
+
+// Use the toString() method
+var date = new Date();
+var dateToString = date.toString();
+console.log(dateToString);
+
+/* Reverse it and display on screen!*/
+
+var dateToStrRev = dateToString.split("").reverse().join("");
+document.getElementById("Display").innerHTML = dateToStrRev;
+
+
+/*
 //Date Object - used to work with time and dates.
 
 var today = new Date();
@@ -43,9 +71,10 @@ var newDate = new Date(parsed);
 alert(newDate);
 
 //date to string
-var stringed = newdate.toString();
+var stringed = newDate.toString();
 
 //Get the year
 var date4 = new Date();
 var getYear = date4.getFullYear();
 //output: 2015;
+*/
