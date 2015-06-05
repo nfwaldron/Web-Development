@@ -1,42 +1,49 @@
-function displayArray()
-{
-    // Declare an array of 10 numbers
-    var numArray = [1,2,3,4,5,6,7,8,9,10];
-    
-    // For loop to loop through elements of the array 
-    for(var i = 0; i < numArray.length; i++)
-        {
-            // Display the elements in the array in the HTML element with the identifier "array". The variable i serves as both a counter, and an index of the element in the array you want to be displayed
-            document.getElementById("array").innerHTML += numArray[i] + " ";
-        }
+//Getting the value of an input
+
+
+function showName() {
+    var name = document.getElementById("name").value;
+    document.getElementById("result").innerHTML = name;
 }
 
 
-/*//Javascript Events
+function addNumbers() {
 
+    var num1 = document.getElementById("num1").value;
+    var num2 = document.getElementById("num2").value;
+    var sum = document.getElementById("result").innerHTML = Number(num1) + Number(num2);
+    return sum;
 
-//onclick - The user clicks some HTML event, and something happens.
-
-
-function sayHi(msg) {
-    document.getElementById("result").innerHTML = msg;
 }
 
-//onmouseout and onmouseover
+function checkName() {
+    var name = document.getElementById("name").value;
 
-function mouseOver() {
-    document.getElementById('pic1').src = "http://upload.wikimedia.org/wikipedia/commons/c/c4/Lleyn_sheep.jpg";
+    if (name === "Cody") {
+        document.getElementById("result").innerHTML = "You're the instructor of this class.";
+    }
+    else if (name === "") {
+        document.getElementById("result").innerHTML = "You must enter something into the input box.";
+    }
+    else {
+        document.getElementById("result").innerHTML = "Hello " + name;
+
+    }
+
 }
 
-function mouseOut() {
-    document.getElementById('pic1').src = "http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/4/11/1397210130748/Spring-Lamb.-Image-shot-2-011.jpg";
-}
+//DOM - Document Object Model
+
+//Finding Elements
+ //By class
+var x = document.getElementsByClassName("food");
+//by tag
+var y = document.getElementsByTagName("p");
+//find by css selector
+var z = document.querySelectorAll("h1.notfood");
 
 
-//onchange
 
-function displayFavorite() {
-    var x = document.getElementById('mySelect').value;
-    document.getElementById('result').innerHTML = "All I want in life is " + x;
-}
-*/
+//Style
+
+document.getElementById("heading").style.color = "red";
