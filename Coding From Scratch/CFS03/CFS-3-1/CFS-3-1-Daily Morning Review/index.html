@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <div class="container">
+        <!--The syntax is, the onclick class equals the name of the Javascript function you want to run once the user clicks the element-->
+    <button onclick="displayDate()">The Button!</button>
+    </div>
+    <p id = "result"></p>
+
+    <div class="container2">
+<form>
+    First Name:<br>
+    <input type = "text" id = "firstName">
+        <br>
+    Last Name:<br>
+    <input type="text" id="lastName">
+        <br>
+    Age:<br>
+    <input type="text" id="age">
+        <br>
+    E-Mail:<br>
+    <input type="text" id="email">
+        <br>
+    Gender:<br>
+    <input type="text" id="gender" value="Enter 'M' or 'F'">
+        <br>
+    <input type="submit" id="submit" onclick="displayMessage()">
+</form>
+</div>
+<div id="container3"></div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-//Getting the value of an input
+/*//Getting the value of an input
 
 
 function showName() {
@@ -46,4 +46,32 @@ var z = document.querySelectorAll("h1.notfood");
 
 //Style
 
-document.getElementById("heading").style.color = "red";
+document.getElementById("heading").style.color = "red";*/
+
+// Use two inputs, get the values, and use the values to make decisions using 'if' statements
+
+function displayMessage()
+{
+    var age = document.getElementById("age").value;
+    var gender = document.getElementById("gender").value;
+    
+    // Ensure that the character entered for gender is uppercase
+    gender = gender.toUpperCase();
+    
+    if (gender==='M' && age > 18)
+    {
+        document.getElementById("container2").innerHTML = "Hooray!";
+    }
+    
+    else if (gender==='F' && age > 18)
+    {
+        document.getElementById("container2").innerHTML = "Let's Go Girl!";
+    }
+    
+    else if (gender==='M' || gender === 'F' && age < 18)
+    {
+        alert ("You're not older than 18!");
+    }
+    
+}
+
