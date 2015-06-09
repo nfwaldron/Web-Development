@@ -32,5 +32,27 @@ myAnimal.prototype.setName = function (name) {
     this.name = name;
 }
 
-
 var rex = new myAnimal("rex",12);
+
+// Create Rectangle Object Constructor
+function rectangle(length, width)
+{
+    this.length = length;
+    this.width = width;
+}
+
+// Create rectangle object
+var rectangleA = new rectangle(2.5, 3.5);
+
+// Add method 
+rectangleA.calculateArea = function()
+{
+    return this.length * this.width;
+}
+
+// Output the area of the rectangle
+// Be sure to call the function as a function, including the ()
+ var area = rectangleA.calculateArea();
+
+console.log('The area of this rectangle is '+ area +'.');
+
