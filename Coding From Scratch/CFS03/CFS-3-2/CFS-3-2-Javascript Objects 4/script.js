@@ -28,7 +28,7 @@ function myAnimal(name,age) {
     this.age = age;
 }
 
-animal.prototype.setName = function (name) {
+myAnimal.prototype.setName = function (name) {
     this.name = name;
 }
 
