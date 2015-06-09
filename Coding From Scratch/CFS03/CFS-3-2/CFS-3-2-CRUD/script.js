@@ -30,3 +30,26 @@ function addPost()
     // Display in the console.
     console.log(collection);
 }
+
+function showPosts()
+{
+    //Clear out the div every time this function is run
+    document.getElementById("blogPosts").innerHTML("");
+
+    //Utilize the for in loop to display all of the properties of the objects within the array collection[]
+    for( var i in collection)
+    {
+        document.getElementById("blogPosts").innerHTML += collection[i].title + collection[i].body + collection[i].image + collection[i].date + "<br>"
+    }
+
+    var title = document.getElementById('title');
+    var title = document.getElementById('body');
+    var title = document.getElementById('image');
+
+    //
+    title.value="";
+    body.value="";
+    image.value"";
+}
+
+showPosts();
