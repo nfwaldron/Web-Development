@@ -29,17 +29,17 @@ function addPost()
     
     // Display in the console.
     console.log(collection);
+    showPosts();
 }
 
 function showPosts()
 {
     //Clear out the div every time this function is run
-    document.getElementById("blogPosts").innerHTML("");
+    document.getElementById("blogPosts").innerHTML = "";
 
     //Utilize the for in loop to display all of the properties of the objects within the array collection[]
-    for( var i in collection)
-    {
-        document.getElementById("blogPosts").innerHTML += collection[i].title + collection[i].body + collection[i].image + collection[i].date + "<br>"
+   for (var i in collection) {
+        document.getElementById("blogPosts").innerHTML += "<div class='post'><h1 class='myTitle'>" + collection[i].title + "</h1><p class='body'>" + collection[i].body + "</p>" + "<img class='image' width='250' src = '" + collection[i].image + "'/>" + "<h6 class='date'>" + collection[i].date + "</h6>" + "</div><br>";
     }
 
     var title = document.getElementById('title');
@@ -47,9 +47,9 @@ function showPosts()
     var title = document.getElementById('image');
 
     //
-    title.value="";
-    body.value="";
-    image.value"";
+    title.value = "";
+    body.value = "";
+    image.value = "";
 }
 
 showPosts();
