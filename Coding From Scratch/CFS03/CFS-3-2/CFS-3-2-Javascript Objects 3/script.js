@@ -43,9 +43,19 @@ function person(name, age, gender, location) {
 
         // Update the value of this.location
         this.location = newLocation;
+
+        // To use this function
     };
 }
 
 var Nathan = new person("Nathan Waldron", 27, "male", "Rhode Island");
 var Cody = new person("Cody Shipley", 25, "male", "Washington");
 var Jamilyah = new person("Jamilyah Richardson", 27, "female", "Boston");
+
+function loopThis() {
+    var myArray = [Nathan, Jamilyah, Cody];
+    document.getElementById('result').innerHTML = "";
+    for (var i in myArray) {
+        document.getElementById("result").innerHTML += "<p>Name: " + myArray[i].name + "Age: " + myArray[i].age + "Location: " + myArray[i].location + "</p>";
+    }
+}
