@@ -41,6 +41,43 @@ for (x in myGum)
     console.log (myGum[x] + "");
 }
 
+/* It turns out we can make a method work for many objects using a new keyword, this. 
+ * The keyword this acts as a placeholder, and will refer to whichever object called that 
+ * method when the method is actually used. Let's look at the method setAge (line 2) to see how 
+ * this works. By using the keyword this, setAge will change the age property of any object that calls it. 
+ * Previously, we had a specific object bob instead of the keyword this. But that limited the use of the 
+ * method to just bob. Then when we say bob.setAge = setAge; (line 9), it means whenever we type 
+ * bob.setAge( ), this.age in the setAge method will refer to bob.age.
+ */
+
+
+// here we define our method using "this", before we even introduce bob
+var setAge = function (newAge) {
+  this.age = newAge;
+};
+// now we make bob
+var bob = new Object();
+bob.age = 30;
+bob.setAge = setAge;
+
+// Create Square Object that can calculate the area and perimeter
+
+var square = new Object();
+square.sideLength = 6;
+square.calcPerimeter = function() {
+  return this.sideLength * 4;
+};
+// help us define an area method here
+square.calcArea = function () {
+    return this.sideLength * this.sideLength;
+}
+    
+
+var p = square.calcPerimeter(3);
+var a = square.calcArea(2);
+  
+
+
 
 
 /*
