@@ -43,8 +43,8 @@ function showPosts()
     }
 
     var title = document.getElementById('title');
-    var title = document.getElementById('body');
-    var title = document.getElementById('image');
+    var body = document.getElementById('body');
+    var image = document.getElementById('image');
 
     //
     title.value = "";
