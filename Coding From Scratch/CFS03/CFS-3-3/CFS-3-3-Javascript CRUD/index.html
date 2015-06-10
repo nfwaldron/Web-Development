@@ -6,23 +6,44 @@
 
 </head>
 <body>
-	<ul>
-		<li>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-2">
+
+			<h1>Create a Car</h1>
 			<input type="text" id="carMake" placeholder="Make...">
-		</li>
-		<li>
+			<br>
+		
 			<input type="number" id="carYear" placeholder="Year...">
-		</li>
-		<li>
+			<br>
 			<input type="text" id="carImg" placeholder="Image Url Here...">
-		</li>
-		<li>
+			<br>
+			<br>
 			<button onclick="addCar()">Create My Car</button>
-		</li>
-	</ul>
-	<div id="carDisplay"></div>
 
+			<h1>Edit Car</h1>
+			<input type="text" id="editMake" placeholder="Make...">
+			<br>
+		
+			<input type="number" id="editYear" placeholder="Year...">
+			<br>
+		
+			<input type="text" id="editImg" placeholder="Image Url Here...">
+			<br>
+			<br>
+			<button onclick="saveCar()">Save Car</button>
+		
+			<div class="row">
+				<div class="col-sm-4">
+			 		<div id="carDisplay">
+			 	
+			 		</div>
+				</div>
+			</div>
 
+		</div>
+	</div>
+</div>
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>

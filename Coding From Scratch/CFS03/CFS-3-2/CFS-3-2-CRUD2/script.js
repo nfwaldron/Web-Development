@@ -41,6 +41,7 @@ function addPost()
 
 function showPost()
 {
+	//class='img-responsive'
 	// Clear out the HTML Element every time the function is run
 	document.getElementById('blogPostDisplay').innerHTML = "";
 
@@ -49,10 +50,19 @@ function showPost()
 	for( var i in postArray)
 	{
 		document.getElementById('blogPostDisplay').innerHTML += "<h3 id ='myTitleDisplay'>" + postArray[i].title 
-		+ "</h3><article id= 'myBodyDisplay'>" + postArray[i].body + "</article><img src='" 
-		+ postArray[i].image; + "class='img-responsive' alt='Responsive Image'>"
+		+ "</h3><article id= 'myBodyDisplay'>" + postArray[i].body + "</article> <img src='" 
+		+ postArray[i].image + "' class='img-responsive' alt='Responsive Image'>";
 	}
 
+	var title = document.getElementById("myTitle");
+	var body = document.getElementById("myBody");
+	var image = document.getElementById("myImage");
+
+	title.value = "";
+    body.value = "";
+    image.value = "";
 }
+
+showPost();
 
 
