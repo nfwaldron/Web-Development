@@ -1,0 +1,15 @@
+html,body {
+  height:100%;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  min-height:100%;
+  background-color:#110022;
+  color:#eee;
+  overflow:hidden;
+  background-image: url(http://41.media.tumblr.com/74e58f11c4401b6b77f7c17e32560c56/tumblr_n2e9yav1FR1sfie3io1_1280.jpg);
+  background-position: center;
+  background-size: cover; 
+}
